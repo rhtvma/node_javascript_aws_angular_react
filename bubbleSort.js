@@ -1,0 +1,20 @@
+
+var array = [2,5,8,5,9,3,8];
+
+function swap(arr, index1, index2){
+    var temp = arr[index1];
+    arr[index1]=arr[index2];
+    arr[index2]=temp;
+}
+
+function bubbleSort(){
+    for(var i=0; i <=array.length; i ++){
+       for(var j=0; j<=array.length-i; j++){
+            if(array[j]>array[j+1]){
+            swap(array,j,j+1);
+      }
+    }
+  }
+}
+
+bubbleSort();

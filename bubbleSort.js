@@ -1,5 +1,4 @@
-
-var array = [2,5,8,5,9,3,8];
+var array = [32,25,18,5,9,3,8];
 
 function swap(arr, index1, index2){
     var temp = arr[index1];
@@ -18,3 +17,4 @@ function bubbleSort(){
 }
 
 bubbleSort();
+console.log(array)

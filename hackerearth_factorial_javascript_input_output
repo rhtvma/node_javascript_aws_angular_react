@@ -1,0 +1,47 @@
+//https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/find-factorial/
+
+
+process.stdin.resume();
+process.stdin.setEncoding("utf-8");
+var stdin_input = "";
+ 
+process.stdin.on("data", function (input) {
+    stdin_input += input;                               // Reading input from STDIN
+});
+ 
+process.stdin.on("end", function () {
+   main(stdin_input);
+});
+ 
+function main(input) {
+    let result = factorial(input); //bcz input is single
+    process.stdout.write(result + "\n");       // Writing output to STDOUT
+}
+
+function factorial(n) {
+    if(n === 0) {
+        return 1
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+
+
+
+/* How to read multiline inputs
+------------------------------------------------------------------------------
+
+example: 
+inputs are : 
+
+21
+19
+function main(input) {
+    var inputArr = input.split('\n')
+    let input1 = parseInt(inputArr[0]); //if numeric
+    let input2 = parseInt(inputArr[1]); //if numeric
+    process.stdout.write(input1 + "\n" + input2);       // Writing output to STDOUT
+}
+
+*/

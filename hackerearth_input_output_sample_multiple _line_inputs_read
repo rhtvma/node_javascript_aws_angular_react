@@ -1,0 +1,38 @@
+
+inputs: 
+
+3 5
+13 4 8 14 1
+9 6 3 7 21
+5 12 17 9 3
+
+//--------------------------------------------------------------------------------
+
+
+
+process.stdin.resume();
+process.stdin.setEncoding("utf-8");
+var stdin_input = "";
+
+process.stdin.on("data", function (input) {
+    stdin_input += input;                               // Reading input from STDIN
+});
+
+process.stdin.on("end", function () {
+   main(stdin_input);
+});
+
+function main(input) {
+    let inpArray = input.split('\n');
+    let inp1 = inpArray[0].split(' ');
+    process.stdout.write(inp1 + "\n");   
+    
+    let inp2 = inpArray[1].split(' ');
+    process.stdout.write(inp2 + "\n");   
+    
+    let inp3 = inpArray[2].split(' ');
+    process.stdout.write(inp3 + "\n");   
+    
+    let inp4 = inpArray[3].split(' ');
+    process.stdout.write(inp4 + "\n");   
+}

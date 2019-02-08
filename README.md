@@ -1,4 +1,4 @@
-# javascript-interview-preparation
+# javascript-preparation
 
 
 

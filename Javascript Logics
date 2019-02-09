@@ -1,0 +1,26 @@
+-------------------------------1------------------------------------
+function foo() {}
+var var1 = new foo();
+console.log(var1.constructor);
+//output : [Function: foo]
+
+-------------------------------2------------------------------------
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+array.forEach((value) => {
+    "use strict";
+    if (value === 3) {
+        break;
+    }
+    console.log("hello");
+})
+//output : SyntaxError: Illegal break statement
+//Reason : You can't break from a forEach
+-------------------------------3------------------------------------
+
+//output : 
+-------------------------------4------------------------------------
+
+//output : 
+-------------------------------5------------------------------------
+

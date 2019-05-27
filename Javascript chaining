@@ -1,3 +1,5 @@
+//----------------------------------1st option without chaning---------------------------
+
 var obj = {
     name: 'Rohit Verma',
     class: 'Computer Science',
@@ -34,3 +36,25 @@ console.log(obj);
 }
 
 //----------------------------------2nd option with chaning---------------------------
+
+var obj = {
+    name: 'Rohit Verma',
+    class: 'Computer Science',
+    score: [],
+    addScore: function (val) {
+        this.score.push(val);
+        return this;
+    },
+    doTotal: function () {
+        this.total = this.score.reduce((x, y) => {
+            return x + y;
+        }, 0);
+        return this;
+    },
+    doAverage: function () {
+        this.average = this.total / this.score.length;
+        return this;
+    }
+};
+obj.addScore(97).addScore(96).addScore(99).doTotal().doAverage();
+console.log(obj);

@@ -1,0 +1,2 @@
+1: remove empty spaces
+    const useID = row.replace(/^\s*/, "").replace(/\s*$/, "");

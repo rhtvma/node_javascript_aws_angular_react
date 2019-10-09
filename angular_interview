@@ -4,8 +4,10 @@ Company : Altran (Aricent)
 
 2: Diff b/w Promise and Observables.
 
-3: Internal working of Observables
+3: Internal working of Observables. (Chaining, cancalation etc.)
 
-4: What is lazyloading? how to achieve it. 
+4: Observals Operators and its uses.
+
+5: What is lazyloading? how to achieve it. 
 
 -------------------------------End of Altran----------------------------------

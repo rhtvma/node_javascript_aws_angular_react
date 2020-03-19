@@ -64,9 +64,10 @@ function gerUserSubjects(user) {
 }
 
 
-getUserById(74).then(user => {
+getUserById(74)
+.then(user => { // 1st Chain
     return gerUserSubjects(user);
-}).then(subject => {
+}).then(subject => {  // 2nd Chain
     console.log(subject);
 }).catch(err => {
     console.log(err);

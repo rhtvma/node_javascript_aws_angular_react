@@ -1,3 +1,5 @@
+LINK : https://bonsaiden.github.io/JavaScript-Garden/#object
+
 -------------------------------1------------------------------------
 function foo() {}
 var var1 = new foo();

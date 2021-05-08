@@ -174,4 +174,28 @@ JavaScript VM internals, EventLoop, Async and ScopeChains:
 https://www.youtube.com/watch?v=QyUFheng6J0&t=1008s
 
 
+// ----------------------- To the new
+
+1: What is subject ?
+2: what are diff types of subject [Total 4 types]
+3: Hot and cold obervables
+4: Angular life cycle hooks
+5: ngOnChanges()
+6: interface, create and describe
+7: lazy loading in angular
+8: ways to send data through URL [4 ways, resolve, queries, authGurds etc]
+9: pipe - Create custom pipe
+10: loose and tight pipe
+11: 
+
+
+
+
+
+
+
+
+
+
+
 

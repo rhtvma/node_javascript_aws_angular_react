@@ -1,6 +1,10 @@
 /************************************************************************
-* Char Count
-*   
+* Write a function called array element frequency count, which accepts one array. 
+* The function should return each element with its occurence
+*************************************************************************/
+
+
+/*************************************************************************   
 * Solution 1    
 * - Make object ot return ar end.
 * - Loop over array, for each elements

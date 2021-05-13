@@ -1,6 +1,11 @@
 /************************************************************************
-* Char Count
-*   
+* Write a function called string char frequency count, which accepts one string. 
+* The function should return each element with its occurence
+*************************************************************************/
+
+
+
+/************************************************************************
 * Solution 1    
 * - Make object ot return ar end.
 * - Loop over string, for each char
@@ -29,9 +34,7 @@ console.log(charCount('Hello faa!'));
 
 
 /************************************************************************
-* Char Count : Without special char.
-* 
-* Solution 2
+* Solution 2 : Without special char.
 * - Make object ot return ar end.
 * - Loop over string, for each char
 * - Check if char is alphanumeric or not
@@ -64,9 +67,7 @@ console.log(charCountRegex('Hello faa!'));
 
 
 /************************************************************************
-* Char Count : Without special char.
-* 
-* Solution 3
+* Solution 3 : Without special char.
 * - Make object ot return ar end.
 * - Loop over string, for each char
 * - Check if char is alphanumeric or not, using alphanumeic funtion

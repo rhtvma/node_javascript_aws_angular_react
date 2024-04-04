@@ -32,7 +32,7 @@ The main advantage to using setImmediate() over setTimeout() is setImmediate() w
 
 
  // ============================================ Another Example ==========================================================
-1: setTimeout is simply like calling the function after delay has finished. Whenever a function is called it is not executed immediately, 
+/*1: setTimeout is simply like calling the function after delay has finished. Whenever a function is called it is not executed immediately, 
            but queued so that it is executed after all the executing and currently queued eventhandlers finish first. 
            setTimeout(,0) essentially means execute after all current functions in the present queue get executed. 
            No guarantees can be made about how long it could take.
@@ -43,7 +43,7 @@ The main advantage to using setImmediate() over setTimeout() is setImmediate() w
            So it is faster.
 
 Also (setTimeout,0) will be slow because it will check the timer at least once before executing. At times it can be twice as slow. Here is a benchmark.
-
+*/
 var Suite = require('benchmark').Suite
 var fs = require('fs')
 
@@ -79,15 +79,14 @@ deffered.resolve() x 993 ops/sec Â±0.67% (22 runs sampled)
 setImmediate() x 914 ops/sec Â±2.48% (57 runs sampled)
 setTimeout(,0) x 445 ops/sec Â±2.79% (82 runs sampled)
 
-
+/** 
 First one gives idea of fastest possible calls. You can check yourself if setTimeout gets called half as many times as other. Also remember setImmediate will adjust to your filesystem calls. So under load it will perform less. I don't think setTimeout can do better.
 
 setTimeout is un-intrusive way of calling functions after some time. Its just like its in the browser. It may not be suited for server-side (think why I used benchmark.js not setTimeout).
 
+*/
 
-
-
-============================== Another Example ======================================
+// ============================== Another Example ======================================
 
 http://voidcanvas.com/setimmediate-vs-nexttick-vs-settimeout/
 
@@ -99,10 +98,10 @@ setImmediate(function(){
 });
  
 //run it
-node index.js
+// node index.js
 // OUTPUT
-SETTIMEOUT
-SETIMMEDIATE
+// SETTIMEOUT
+// SETIMMEDIATE
 
-In this setTimeout printed before why ?
+// In this setTimeout printed before why ?
 

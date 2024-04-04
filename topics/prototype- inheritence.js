@@ -14,8 +14,8 @@ Person.prototype.location = "YNR";
 rohit.calculateAge(2019); //This is inheritence
 
 //Output
-Person { name: 'Rohit', dob: 1993, job: 'Software Developer' }
-26
+// Person { name: 'Rohit', dob: 1993, job: 'Software Developer' }
+// 26
 
 
 /*

@@ -7,4 +7,4 @@ a = a - b;
 console.log(a, b)
 
 //output:
-7 10
+// 7 10

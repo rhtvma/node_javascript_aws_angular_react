@@ -18,14 +18,14 @@ const arrayVal = [1, 2, 3, 4, 5, 6]
     /* filter
         The filter() method creates a new array with all elements that pass the test set by the callback function.
     */
-    const mapResult = arrayVal.filter((value) => {
+    const filterResult = arrayVal.filter((value) => {
         return value % 2 === 0;
     });
 
-    console.log("filter - 1 ", mapResult)
+    console.log("filter - 1 ", filterResult)
 
-    // const mapResult2 = arrayVal.filter(item => item % 2 === 0)
-    // console.log("filter - 2 ", mapResult2)
+    // const filterResult2 = arrayVal.filter(item => item % 2 === 0)
+    // console.log("filter - 2 ", filterResult2)
     console.log("filter - END ---------------------------------", '\n', '\n')
 }
 

@@ -74,10 +74,10 @@ suite
 })
 .run({async: true})
 
-Output :
-deffered.resolve() x 993 ops/sec Â±0.67% (22 runs sampled)
-setImmediate() x 914 ops/sec Â±2.48% (57 runs sampled)
-setTimeout(,0) x 445 ops/sec Â±2.79% (82 runs sampled)
+// Output :
+// deffered.resolve() x 993 ops/sec Â±0.67% (22 runs sampled)
+// setImmediate() x 914 ops/sec Â±2.48% (57 runs sampled)
+// setTimeout(,0) x 445 ops/sec Â±2.79% (82 runs sampled)
 
 /** 
 First one gives idea of fastest possible calls. You can check yourself if setTimeout gets called half as many times as other. Also remember setImmediate will adjust to your filesystem calls. So under load it will perform less. I don't think setTimeout can do better.

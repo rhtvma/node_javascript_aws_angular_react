@@ -24,16 +24,15 @@ obj.doAverage();
 console.log(obj);
 
 //Output
-
-{ name: 'Rohit Verma',
-  class: 'Computer Science',
-  score: [ 97, 96, 99 ],
-  addScore: [Function: addScore],
-  doTotal: [Function: doTotal],
-  doAverage: [Function: doAverage],
-  total: 292,
-  average: 97.33333333333333 
-}
+// { name: 'Rohit Verma',
+//   class: 'Computer Science',
+//   score: [ 97, 96, 99 ],
+//   addScore: [Function: addScore],
+//   doTotal: [Function: doTotal],
+//   doAverage: [Function: doAverage],
+//   total: 292,
+//   average: 97.33333333333333 
+// }
 
 //----------------------------------2nd option with chaning---------------------------
 

@@ -12,7 +12,7 @@ var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 array.forEach((value) => {
     "use strict";
     if (value === 3) {
-        break;
+        break; // error
     }
     console.log("hello");
 })

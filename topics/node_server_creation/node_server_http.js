@@ -18,21 +18,21 @@ const defaultHandler = (request, response) => {
 // add getHandler method in controller.js
 const getHandler = (request, response) => {
     const data = {
-      name: "Rohit Verma",
-      category: "technology",
-      website: "rhtvma.com",
+        name: "Rohit Verma",
+        category: "technology",
+        website: "rhtvma.com",
     };
     response.writeHead(200, {
-      "Content-Type": "application/json",
+        "Content-Type": "application/json",
     });
     response.write(
-      JSON.stringify({
-        message: "GET Successful",
-        data,
-      })
+        JSON.stringify({
+            message: "GET Successful",
+            data,
+        })
     );
     response.end();
-  };
+};
 // Step 2: Create the server using the http.createServer() method
 const server = http.createServer((req, res) => {
     const reqURL = req.url;

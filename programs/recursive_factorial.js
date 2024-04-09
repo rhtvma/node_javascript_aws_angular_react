@@ -9,4 +9,4 @@ function recursive(n) {
 console.log(recursive(0));
 
 //output:
-120
+// 120

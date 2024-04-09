@@ -13,4 +13,4 @@ function reverseNum(num) {
 console.log(reverseNum(2121));
 
 //output:
- 1212
+//  1212

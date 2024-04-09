@@ -21,14 +21,14 @@ const arrayVal = [1, 2, 3, 4, 5, 6]
     /* filter
         The filter() method creates a new array with all elements that pass the test set by the callback function.
     */
-    const mapResult = arrayVal.filter((value) => {
+    const filterResult = arrayVal.filter((value) => {
         return value % 2 === 0;
     });
 
-    console.log("filter - 1 ", mapResult)
+    console.log("filter - 1 ", filterResult)
 
-    // const mapResult2 = arrayVal.filter(item => item % 2 === 0)
-    // console.log("filter - 2 ", mapResult2)
+    // const filterResult2 = arrayVal.filter(item => item % 2 === 0)
+    // console.log("filter - 2 ", filterResult2)
     console.log("filter - END ---------------------------------", '\n', '\n')
 }
 
@@ -66,12 +66,12 @@ const arrayVal = [1, 2, 3, 4, 5, 6]
 //  ================================ ANOTHER EXAMPLE ================================
 
 var people = [
-    {name: 'Alice', age: 21, class: 'cse'},
-    {name: 'Max', age: 20, class: 'ece'},
-    {name: 'Min', age: 22, class: 'ece'},
-    {name: 'Jai', age: 22, class: 'ece'},
-    {name: 'Min', age: 22, class: 'ece'},
-    {name: 'Jane', age: 20, class: 'mec'}
+    { name: 'Alice', age: 21, class: 'cse' },
+    { name: 'Max', age: 20, class: 'ece' },
+    { name: 'Min', age: 22, class: 'ece' },
+    { name: 'Jai', age: 22, class: 'ece' },
+    { name: 'Min', age: 22, class: 'ece' },
+    { name: 'Jane', age: 20, class: 'mec' }
 ];
 
 function groupBy(objectArray, property) {

@@ -1,4 +1,6 @@
-# javascript-preparation
+# nodeJS | javascript | Angular 
+
+Most commonly interview questions and topics along with executable examples
 
 
 

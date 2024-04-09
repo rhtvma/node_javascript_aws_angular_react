@@ -1,7 +1,7 @@
-LINK : https://bonsaiden.github.io/JavaScript-Garden/#object
+LINK: https://bonsaiden.github.io/JavaScript-Garden/#object
 
 // -------------------------------1------------------------------------
-function foo() {}
+function foo() { }
 var var1 = new foo();
 console.log(var1.constructor);
 //output : [Function: foo]
@@ -33,14 +33,13 @@ delete y;       // returns false
 
 var a = 0;
 b = 0;
-(function ()  {
+(function () {
     console.log(delete b);
     console.log(a);
     console.log(b);
-})
-();
+})();
 
-//output : 
+//output :
 //   true
 //   0
 //   console.log(b);
@@ -48,7 +47,7 @@ b = 0;
 //   ReferenceError: b is not defined
 
 // -------------------------------4------------------------------------
-// 
-//output : 
+//
+//output :
 // -------------------------------5------------------------------------
 

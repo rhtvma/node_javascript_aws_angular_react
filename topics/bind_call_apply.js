@@ -1,9 +1,9 @@
 /*-------------------------------------------bind-----------------------------------------------------------
 
-The bind() method creates a new function that, when called, has its this keyword set to the provided value. (It actually talks about even more stuff, but we’ll leave that for another time :) )
+The bind() method creates a new function that, when called, has its this keyword set to the provided value. 
+(It actually talks about even more stuff, but we’ll leave that for another time :) )
 
 This is extremely powerful. It let’s us explicitly define the value of this when calling a function.
-
 */
 var pokemon = {
     firstname: 'Pika',
@@ -48,12 +48,14 @@ logPokemon1('sushi', 'algorithms'); // Pika Chu  loves sushi and algorithms
 
 The main differences between bind() and call() is that the call() method:
 
-Accepts additional parameters as well
+the call() method: Accepts additional parameters as well
 Executes the function it was called upon right away.
+
 The call() method does not make a copy of the function it is being called on.
-call() and apply() serve the exact same purpose. The only difference between how they work is that call() expects all parameters to be passed in individually, whereas apply() expects an array of all of our parameters.
+call() and apply() serve the exact same purpose. 
 
-
+The only difference between how they work is that call() expects all parameters to be passed in individually, 
+whereas apply() expects an array of all of our parameters.
  */
 
 var pokemon2 = {

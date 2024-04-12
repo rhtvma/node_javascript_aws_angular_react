@@ -1,0 +1,29 @@
+
+- How do you work on node.js project - what is your working style like Implementation process, deployment process, github branch PR requests, JIRA etc
+- How do you work on github?, what process do you follow to create branch, how do you merge your code in git?
+- How do you manage hot fixes on release branch
+
+- how you used aws with node.js, what dependencies you used?
+- 
+- tell me the process of aws + node
+- how do you deploy aws code
+- what is serverless & how its different from microservice and monolithic
+
+- what is sequelize, what are the benefits of it, 
+- how do you manage multiple databases with sequelize
+- how you manage mongodb
+
+- in node js how do you manage from environment from dev, pat or prod ? how do you switch 
+
+- have you used REST api ? tell all methods
+- what are the diff between put and patch ? [ with working example for both]
+- what is options method in REST api
+
+- promise vs async await [ with working example for both]
+- how you will process all async await requests in parallel 
+
+- mysql inner join query with example and scenarios 
+- joins, group by, count, having clouse etc
+
+
+

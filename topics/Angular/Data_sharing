@@ -8,7 +8,9 @@
 # ================[ Parent-to-Child ]===================
  Sharing Data via @Input
 
- Input properties allow to passing of data from a parent component to its child component. By defining a property in the child component with the @Input() decorator, you can receive the data from the parent component.
+ Input properties allow to passing of data from a parent component to its child component. 
+ By defining a property in the child component with the @Input() decorator, 
+ you can receive the data from the parent component.
 
  parent.component.ts
 
@@ -52,7 +54,9 @@ Sharing Data via @Output() and EventEmitter
 
     If you want to pass data from the child component to the parent component use @Output() and EventEmitter.
 
-    @Output is a component decorator that becomes the output for the parent component and EventEmitter is something that can propagate the event from the child component to the parent component. In the parent, we will create a function to receive the message and set it equal to the message variable. In the child, we declare a messageEvent variable with the Output decorator and set it equal to a new event emitter.
+    @Output is a component decorator that becomes the output for the parent component and EventEmitter is something that can propagate the event from the child component to the parent component. 
+    In the parent, we will create a function to receive the message and set it equal to the message variable. 
+    In the child, we declare a messageEvent variable with the Output decorator and set it equal to a new event emitter.
 
 parent.component.ts
 
@@ -100,15 +104,19 @@ child.component.ts
             }
         }
 
-We create a function named sendMessage that calls emit on this event with the message we want to send. Lastly, we create a button to trigger this function. The parent can now subscribe to this messageEvent that’s outputted by the child component, and then run the receive message function whenever this event occurs.
+We create a function named sendMessage that calls emit on this event with the message we want to send. 
+Lastly, we create a button to trigger this function. 
+The parent can now subscribe to this messageEvent that’s outputted by the child component, and then run the receive message function whenever this event occurs.
 
 
 # ================[ Child-to-Parent: via ViewChild ]===================
 Sharing Data via ViewChild
 
-    ViewChild allows one component to be injected into another, giving the parent access to its attributes and functions.
+    ViewChild allows one component to be injected into another,
+     giving the parent access to its attributes and functions.
 
-    There's an issue that the child won’t be available until after the view has been initialized. Therefore, we need to implement the AfterViewInit lifecycle hook to receive the data from the child.4
+    There's an issue that the child won’t be available until after the view has been initialized. 
+    Therefore, we need to implement the AfterViewInit lifecycle hook to receive the data from the child.4
 
 parent.component.ts
         
@@ -156,11 +164,16 @@ child.component.ts
 # ================[ Unrelated Components ]===================
 Sharing Data via a Service
 
-    A shared service acts as a central point for data manipulation and communication between components. Components can share data by injecting and accessing the service.
+    A shared service acts as a central point for data manipulation and communication between components. 
+    Components can share data by injecting and accessing the service.
 
-    In the service, we create a private BehaviorSubject that will hold the current value of the message. We define a currentMessage variable to handle this data stream as an observable that will be used by the components. After that, we create a function that calls next on the BehaviorSubject to change its value.
+    In the service, we create a private BehaviorSubject that will hold the current value of the message. 
+    We define a currentMessage variable to handle this data stream as an observable that will be used by the components. 
+    After that, we create a function that calls next on the BehaviorSubject to change its value.
 
-    The parent, child, and sibling components all receive the same treatment. We inject the DataService in the constructor, then subscribe to the currentMessage observable and set its value equal to the message variable.
+    The parent, child, and sibling components all receive the same treatment. 
+    We inject the DataService in the constructor, 
+    then subscribe to the currentMessage observable and set its value equal to the message variable.
 
 data.service.ts
         
@@ -246,4 +259,6 @@ sibling.component.ts
 
         }
 
-The SiblingComponent is responsible for storing the shared data and providing methods for setting and retrieving it. Both components can inject the service and make use of its methods to access the data. This creates a two-way data flow between all components that make use of the service.
+The SiblingComponent is responsible for storing the shared data and providing methods for setting and retrieving it. 
+Both components can inject the service and make use of its methods to access the data. 
+This creates a two-way data flow between all components that make use of the service.

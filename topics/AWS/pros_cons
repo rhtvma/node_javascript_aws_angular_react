@@ -9,4 +9,3 @@ Disadvantages Of Amazon Web Services
  2 AWS can be expensive, especially if you have a high-traffic application or need to run multiple services. Additionally, the cost of services can increase over time, so you need to regularly monitor your spending.
  3 While AWS provides many security features and tools, securing your resources on AWS can still be challenging, and you may need to implement additional security measures to meet your specific requirements.
  4 AWS manages many aspects of the infrastructure, which can limit your control over certain parts of your application and environment.
-

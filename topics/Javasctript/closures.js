@@ -57,3 +57,30 @@ console.log(counter.value()); // 2.
 
 counter.decrement();
 console.log(counter.value()); // 1.
+
+
+
+// 
+// https://www.youtube.com/watch?v=QyUFheng6J0&t=1008s
+
+function makeAdder(n) {
+    var inc = n;
+    var sum = 0;
+    return function add () {
+      sum = sum + inc;
+      console.log(sum)
+      return sum;
+    }
+  }
+  
+  var adder3 = makeAdder(3)
+  adder3()
+  adder3()
+  adder3()
+
+  /**
+    Output
+    3
+    6
+    9
+  */

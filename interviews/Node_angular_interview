@@ -100,7 +100,6 @@ abc();
 console.log('d');
 
 
-
 2:
 console.log('a');
 abc = (a,b) => {
@@ -162,16 +161,8 @@ Explain this via dependency injection how will you perform..
 
 Clue : There is are two types of dependency injection... 
 1. Functional dependency 
-2. Pata nahi 🙄
+2. 
 
-
-What the heck is the event loop anyway?
-https://www.youtube.com/watch?v=8aGhZQkoFbQ
-
-
-
-JavaScript VM internals, EventLoop, Async and ScopeChains:
-https://www.youtube.com/watch?v=QyUFheng6J0&t=1008s
 
 
 

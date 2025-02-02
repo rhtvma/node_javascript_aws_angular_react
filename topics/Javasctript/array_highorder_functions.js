@@ -4,6 +4,8 @@ const arrayVal = [1, 2, 3, 4]
 {
   /* MAP
       The map() function creates a new array generated from the results of callback function on every element within the array.
+  OR
+      The map() method in JavaScript creates a new array by calling a specific function on each element of the parent array. It does not mutate the original array.
   */
   const mapResult = arrayVal.map((val) => {
     return val * 2
@@ -24,6 +26,9 @@ const arrayVal = [1, 2, 3, 4]
 {
   /* filter
       The filter() method creates a new array with all elements that pass the test set by the callback function.
+  OR
+      The Array filter() method is used to create a new array from a given array consisting of only those elements from the given array which satisfy a condition set by the argument function
+
   */
   const mapResult = arrayVal.filter((value) => {
     return value % 2 === 0;

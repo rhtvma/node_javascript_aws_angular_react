@@ -1,4 +1,4 @@
-((arg1, arg2) => {
-  const sum = arg1 + arg2
-  console.log(sum)
-})(5,8)
+var array=[1,2,3,4,5];
+ 
+console.log(array.slice(,4));
+console.log(array)

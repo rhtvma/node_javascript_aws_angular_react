@@ -8,8 +8,14 @@
     Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results. Apps using GraphQL are fast and stable because they control the data they get, not the server.
 
     # Server (Node.js)
-    const { ApolloServer } = require("@apollo/server");
-    const { expressMiddleware } = require("@apollo/server/express4");
+        "@apollo/server": "^4.7.5",
+        "graphql": "^16.7.1"
+
+        const { ApolloServer } = require("@apollo/server");
+        const { expressMiddleware } = require("@apollo/server/express4");
 
     # Client (React)
-    import { gql, useQuery } from "@apollo/client";
+        "@apollo/client": "^3.7.17",
+        "graphql": "^16.7.1",
+
+        import { gql, useQuery } from "@apollo/client";

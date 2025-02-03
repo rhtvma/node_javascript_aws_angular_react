@@ -1,3 +1,5 @@
+<!-- Amazon Resource Names (ARNs) -->
+
 # What is Step Functions?
 
     With AWS Step Functions, you can create workflows, also called State machines, 
@@ -106,3 +108,52 @@
         IAM verifies that a user or service has the necessary authorization to access a particular service in the AWS cloud. 
         We can also use IAM to grant the right level of access to specific users, groups, or services. 
         For example, we can use IAM to enable an EC2 instance to access S3 buckets by requesting fine-grained permissions.
+
+
+
+    # The information in a statement is contained within a series of elements.
+        Version – Specify the version of the policy language that you want to use. We recommend that you use the latest 2012-10-17 version. For more information, see IAM JSON policy elements: Version
+
+        Statement – Use this main policy element as a container for the following elements. You can include more than one statement in a policy.
+
+        Sid (Optional) – Include an optional statement ID to differentiate between your statements.
+
+        Effect – Use Allow or Deny to indicate whether the policy allows or denies access.
+
+        Principal (Required in some circumstances) – If you create a resource-based policy, you must indicate the account, user, role, or federated user to which you would like to allow or deny access. If you are creating an IAM permissions policy to attach to a user or role, you cannot include this element. The principal is implied as that user or role.
+
+        Action – Include a list of actions that the policy allows or denies.
+
+        Resource (Required in some circumstances) – If you create an IAM permissions policy, you must specify a list of resources to which the actions apply. If you create a resource-based policy, it depends on the resource you're using as to whether this element is required or not.
+
+        Condition (Optional) – Specify the circumstances under which the policy grants permission.
+                {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                            {
+                            "Sid": "FirstStatement",
+                            "Effect": "Allow",
+                            "Action": ["iam:ChangePassword"],
+                            "Resource": "*"
+                            },
+                            {
+                            "Sid": "SecondStatement",
+                            "Effect": "Allow",
+                            "Action": "s3:ListAllMyBuckets",
+                            "Resource": "*"
+                            },
+                            {
+                            "Sid": "ThirdStatement",
+                            "Effect": "Allow",
+                            "Action": [
+                                "s3:List*",
+                                "s3:Get*"
+                            ],
+                            "Resource": [
+                                "arn:aws:s3:::amzn-s3-demo-bucket-confidential-data",
+                                "arn:aws:s3:::amzn-s3-demo-bucket-confidential-data/*"
+                            ],
+                            "Condition": {"Bool": {"aws:MultiFactorAuthPresent": "true"}}
+                            }
+                        ]
+                    }

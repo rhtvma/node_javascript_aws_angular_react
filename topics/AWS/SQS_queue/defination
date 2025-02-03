@@ -10,7 +10,6 @@ If a consumer works on a message the message will be deleted if it is successful
 Otherwise, it can also be picked up by other consumers.
 
 
-
 // ===================
 
 When should I use SQS?

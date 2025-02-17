@@ -2,8 +2,17 @@ Props and State are used to Control and Manipulate
 How Components behave and Render.
 
 # What is JSX or Javascript XML
- - A syntax Extension for javascript That allows Developers to Write HTML-Like code
- Directly into javascript files
+  JSX is a syntax extention for Javascript that lets you write HTML-like makekup inside a javascript file.
+
+ - Rules to write jSX
+    1 - return a single root element
+    e.g.
+      using Fragments:- <></>  
+      using div or any tag with closing:- <div></div>
+
+    2 - it should be camelCase
+
+--------------------------------
 
 # What is the Virtual DOM, and how does React use it to improve performance?
  - The Virtual DOM is a lightweight in-memory representation of the actual DOM.
